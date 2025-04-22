@@ -1,0 +1,20 @@
+def known_safes(self):
+
+    safes = set()
+    for cell in self.cells:
+        for safe in MinesweeperAI.safes:
+            if safe == cell:
+                safes.add(safe)
+    return safes
+
+
+def known_mines(self):
+
+    mines = set()
+        for cell in self.cells:
+            for mine in MinesweeperAI.mines:
+                if mine == cell:
+                    mines.add(mine)
+    return mines
+
+   
